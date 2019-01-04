@@ -28,6 +28,9 @@
             </div>
         </div>
         <div class="b">
+        <?php
+            for($i=0;$i<7;$i++){
+                ?>
             <div class="b1">
                 <p>
                     <h1 class="h1">Name</h1>
@@ -38,66 +41,9 @@
                     <p class="b11">Time:24:40 Hrs IST |26 Dec</p>
                 </p>
             </div>
-            <div class="b1">
-                <p>
-                    <h1 class="h1">Name</h1>
-                    <p>hello guys, this is my first status
-                       … At the same time, every minute, 10 hours of content were uploaded to the video sharing platform
-                        YouTube … According to Forrester Research, 75% of Internet surfers used “Social Media” in the
-                        quarter of 2008 by joining social networks, reading blogs, or contributing …</p>
-                    <p class="b11">Time:24:40 Hrs IST |26 Dec</p>
-                </p>
-            </div>
-            <div class="b1">
-                <p>
-                    <h1 class="h1">Name</h1>
-                    <p> hello guys, this is my first status
-                        … At the same time, every minute, 10 hours of content were uploaded to the video sharing platform
-                        YouTube … According to Forrester Research, 75% of Internet surfers used “Social Media” in the
-                        quarter of 2008 by joining social networks, reading blogs, or contributing …</p>
-                    <p class="b11">Time:24:40 Hrs IST |26 Dec</p>
-                </p>
-            </div>
-            <div class="b1">
-                <p>
-                    <h1 class="h1">Name</h1>
-                    <p>hello guys, this is my first status
-                       … At the same time, every minute, 10 hours of content were uploaded to the video sharing platform
-                        YouTube … According to Forrester Research, 75% of Internet surfers used “Social Media” in the
-                        quarter of 2008 by joining social networks, reading blogs, or contributing …</p>
-                    <p class="b11">Time:24:40 Hrs IST |26 Dec</p>
-                </p>
-            </div>
-            <div class="b1">
-                <p>
-                    <h1 class="h1">Name</h1>
-                    <p>hello guys, this is my first status
-                        … At the same time, every minute, 10 hours of content were uploaded to the video sharing platform
-                        YouTube … According to Forrester Research, 75% of Internet surfers used “Social Media” in the
-                        quarter of 2008 by joining social networks, reading blogs, or contributing …</p>
-                    <p class="b11">Time:24:40 Hrs IST |26 Dec</p>
-                </p>
-            </div>
-            <div class="b1">
-                <p>
-                    <h1 class="h1">Name</h1>
-                    <p>hello guys, this is my first status
-                        … At the same time, every minute, 10 hours of content were uploaded to the video sharing platform
-                        YouTube … According to Forrester Research, 75% of Internet surfers used “Social Media” in the
-                        quarter of 2008 by joining social networks, reading blogs, or contributing …</p>
-                    <p class="b11">Time:24:40 Hrs IST |26 Dec</p>
-                </p>
-            </div>
-            <div class="b1">
-                <p>
-                    <h1 class="h1">Name</h1>
-                    <p>hello guys, this is my first status
-                        … At the same time, every minute, 10 hours of content were uploaded to the video sharing platform
-                        YouTube … According to Forrester Research, 75% of Internet surfers used “Social Media” in the
-                        quarter of 2008 by joining social networks, reading blogs, or contributing …</p>
-                    <p class="b11">Time:24:40 Hrs IST |26 Dec</p>
-                </p>
-            </div>
+            <?php
+            }
+        ?>
         </div>
     </body>
     //<script type="text/javascript" src="js/homepage.js"></script>
