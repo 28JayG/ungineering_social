@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    border: solid white 1px;
+}
+.a{
+    height: 150px;
+    width: 1885px;
+}
+.b{
+    background-color:#f4f4f4;
+}
+.a1{
+    float: left;
+    height: 150px;
+    width: 1280px;
+}
+.a2{
+    float: left;
+    height: 150px;
+    width: 300px;
+    line-height: 241px;
+    text-align: right;
+}
+.a3{
+    float: left;
+    height: 150px;
+    width: 300px;
+    line-height: 241px;
+    text-align: left;
+    padding-left: 11px;
+}
+.a11{
+    float: left;
+    height: 150px;
+    width: 177px;
+    margin:-18px;
+}
+.a12{
+    float: left;
+    height: 150px;
+    width: 211px;
+}
+input[type="submit"]{
+    color: red;
+    width: 150px;
+    height:34px;
+}
+input[value="Login"]{
+    color: red;
+    border: solid black 1px;
+    background-color: white;
+}
+input[value="New user"]{
+    background-color: red;
+    color: white;
+}
+.a121{
+    height: 73px;
+}
+.a122{
+    height: 73px;
+}
+span.p2{
+    color: red;   
+}
+p.p1{
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    border-bottom: solid black 1px;
+    color: black;
+}
+.a111{
+    margin: 48px;
+    width:116px;
+}
+.b1{
+    border: solid gray 1px;
+    height: 176px;
+    margin-left: 270px;
+    margin-top: 95px;
+    margin-right: 364px;
+    margin-bottom: -70px;
+    background-color: white;
+    padding-left: 49px;
+    padding-right:20px;
+    padding-top: -5px;
+}
+.b11{
+    font-style: italic;
+    border: none;
+}
+.h1{
+    font-size: 23px;
+}
+.pa122{
+    font-size: 11px;
+    margin-top:20px;
+}
