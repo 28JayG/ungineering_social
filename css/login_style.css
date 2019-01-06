@@ -1,9 +1,9 @@
 p{
     color: #595959;
-    font-size: 30px;
+    font-size: 32px;
     text-align: left;
     margin-left: 109px;
-    margin-top: 0px;
+    margin-top: 03px;
     margin-bottom: 20px;
     font-family: sans-serif;
 }
@@ -38,9 +38,9 @@ input{
 }
 
 .log{
-    color: crimson;
+    color: #D25050;
     text-decoration: underline;
-    margin-left: 344px;
+    margin-left: 327px;
     font-family: sans-serif;
     font-size: 15px;
 }
@@ -81,7 +81,7 @@ input{
     height: 100%;
     margin: 0px;  
     position: relative;
-    background-color: #f2f2f2;
+    background-color: #f4f4f4;
 }
 
 .div11{
@@ -158,12 +158,16 @@ input{
 }
 
 .sub{
-    padding-left: 150px;
-    padding-right: 253px;
-    margin-left: 188px;
-    background-color: crimson;
+    padding-left: 170px;
+    padding-right: 232px;
+    margin-left: 191px;
+    margin-top: 7px;
+    background-color: #F04C4D;
+    font-weight: bold;
+    font-family: sans-serif;
     padding-top: 11px;
     padding-bottom: 9px;
+    border-radius: 2px;
     font-size: 13px;
 }
 
@@ -186,5 +190,5 @@ input{
 }
 
 .updiv{
-    height=90%;
+    height:90%;
 }
