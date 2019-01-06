@@ -29,6 +29,40 @@
         </div>
         <div class="b">
         <?php
+            $hostname = "localhost";
+            $username = "root";
+            $db_password = "123456";
+            $database = "ungineering";
+
+            $conn = mysqli_connect($hostname, $username, $db_password, $database);
+            if (!$conn) {
+                die("Connection failed: " . mysqli_connect_error());
+            }
+
+            $sql = "SELECT * FROM statuses";
+
+            $result = mysqli_query($conn, $sql);
+            if (!$result) {
+                die("Error: " . $sql . "<br>" . mysqli_error($conn));
+            }
+            
+            
+            while ($row=mysqli_fetch_array($result)) {
+            ?>
+            <div class="b1">
+                <p>
+                    <h1 class="h1"><?php echo $row['name']; ?></h1>
+                     <p><?php echo $row['status']; ?></p>
+                    <p class="b11"><?php echo "Time:". echo $row['date_time'].echo "Hrs IST"?></p>
+                
+            }
+                </p>
+            </div>    	
+            <?php
+                mysqli_close($conn);
+        ?>
+
+        <!--<?php
             for($i=0;$i<7;$i++){
                 ?>
             <div class="b1">
@@ -44,7 +78,7 @@
             <?php
             }
         ?>
-        </div>
+        </div>-->
     </body>
     //<script type="text/javascript" src="js/homepage.js"></script>
 </html> 
