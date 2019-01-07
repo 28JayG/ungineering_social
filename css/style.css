@@ -29,14 +29,16 @@ body{
 
 input{
     //color: green;
-    font-size: 15px;
-    padding-top:8px;
-    padding-bottom: 7px;
+    font-size: 18px;
+    padding-top:10px;
+    padding-bottom: 9px;
     background-color: white;
     text-align: left;
     width: 400px;
+    padding-left:2px;
+    border:none;
     border-radius: 3px;
-    border: aliceblue;
+    //border: aliceblue;
     //padding: 5px;
 }
 
@@ -163,7 +165,7 @@ input{
 .sub{
     padding-left: 150px;
     padding-right: 253px;
-    margin-left: 188px;
+    margin-left: 189px;
     background-color: #F04C4D;
     font-weight: bold;
     font-family: sans-serif;
@@ -193,4 +195,10 @@ input{
 
 .updiv{
     height:90%;
+}
+
+span{
+    color: red;
+    font-size: 12px;
+    font-style: bold;
 }

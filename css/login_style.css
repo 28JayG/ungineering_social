@@ -28,13 +28,16 @@ body{
 }
 
 input{
-    color: green;
-    font-size: 30px;
+    //color: green;
+    font-size: 18px;
     text-align: left;
     width: 400px;
     border-radius: 3px;
-    border: aliceblue;
-    //padding: 5px;
+    border: none;
+    padding-top: 10px;
+    padding-left:2px;
+    padding-bottom: 9px;
+
 }
 
 .log{
@@ -122,6 +125,14 @@ input{
     position: relative;
 }
 
+.div222{
+    height: 7%;
+    display: block;
+    //margin-bottom: 25px;
+    margin-bottom: 18px;
+    position: relative;
+}
+
 .div221{
     //border: solid red 1px;
     height: 9.2%;
@@ -160,7 +171,7 @@ input{
 .sub{
     padding-left: 170px;
     padding-right: 232px;
-    margin-left: 191px;
+    margin-left: 189px;
     margin-top: 7px;
     background-color: #F04C4D;
     font-weight: bold;
@@ -191,4 +202,10 @@ input{
 
 .updiv{
     height:90%;
+}
+
+span{
+    color: red;
+    font-size: 12px;
+    font-style: bold;
 }

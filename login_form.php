@@ -1,34 +1,3 @@
-<?php
-    session_start();
-    
-    $hostname = "localhost";
-    $username = "root";
-    $db_password = "123456";
-    $db_name = "social_media";
-    
-    $conn = mysqli_connect($hostname, $username, $db_password, $db_name);
-    if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
-
-    $email=$_POST['email'];
-    $password=$_POST['password'];
-
-    $sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
-    $result = mysqli_query($conn, $sql);
-    if (!$result) {
-        die("Error: " . $sql . "<br>" . mysqli_error($conn));
-    }
-
-    if ($row=mysqli_fetch_array($result)) {
-        //echo $pname;
-        
-        $_SESSION['id']=$row['id'];
-        $_SESSION['name']=$row['name'];
-    }
-    mysqli_close($conn);
-?>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -51,7 +20,7 @@
                 </div>
                 <div class="lastdiv">   </div>
             </div>
-            <form method="post" class="div2" action="dashboard.php">
+            <form method="post" class="div2" action="login_submit.php" onsubmit="return validation()">
                 <div class="div21">
 
                 </div>
@@ -65,7 +34,8 @@
                         Email
                     </div>
                     <div class="divx2">
-                        <input type="email" name="email"/>
+                        <input type="email" id="email" name="email"/>
+                        <span id="semail" ></span>
                     </div>
                 </div>
                 <div class="div22">
@@ -74,6 +44,7 @@
                     </div>
                     <div class="divx2">
                         <input type="password" id="pass" name="password"/>
+                        <span id="spass" ></span>
                     </div>
                 </div>
 
@@ -81,7 +52,7 @@
                     <input style="color:white" type="submit" id="submit" class="sub" name="submit" value="Log-in"/>
                 </div>
                 <div class="div23">
-                    <a class="log" href="http://127.0.0.1/social_media/register_form.php">New User Create Account</a>
+                    <a class="log" href="register_form.php">New User Create Account</a>
                 </div>
                 <div class="div22">
                     <div class="divx1">
@@ -91,7 +62,7 @@
                         
                     </div>
                 </div>
-                <div class="div22">
+                <div class="div222">
                     <div class="divx1">
                         
                     </div>
@@ -102,6 +73,6 @@
                 <div class="lastdiv">   </div>
             </form>
         </div>
-        <!--<script type="text/javascript" src="js/login_form.js">    </script>-->
+        <script type="text/javascript" src="js/login_form.js">    </script>
     </body>
 </html>

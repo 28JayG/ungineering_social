@@ -2,7 +2,7 @@
 <html>
     <head>
     <title>Register Form</title>
-        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
         <div class="container">
@@ -18,9 +18,8 @@
                     </p>
                     <a class="log1" href="http://127.0.0.1/social_media/login_form.php">Existing User Log-In</a>
                 </div>
-                <div class="lastdiv">   </div>
             </div>
-            <form method="post" class="div2" onsubmit="return validation()" action="register_submit2.php">
+            <div class="div2">
                 <div class="div21">
                     
                 </div>
@@ -29,14 +28,12 @@
                         <b>Create Account</b>
                     </p1>
                 </div>
-                
                 <div class="div22">
                     <div class="divx1">
                         Name
                     </div>
                     <div class="divx2">
-                        <input type="text" id ="name" name="name" />
-                        <span id="sname" ></span>
+                        <input type="text" name="name"/>
                     </div>
                 </div>
                 <div class="div22">
@@ -44,8 +41,7 @@
                         Email
                     </div>
                     <div class="divx2">
-                        <input type="email" id ="email" name="email"/>
-                        <span id="semail" ></span>
+                        <input type="text" name="email"/>
                     </div>
                 </div>
                 <div class="div22">
@@ -54,31 +50,24 @@
                     </div>
                     <div class="divx2">
                         <input type="password" id="pass" name="password"/>
-                        <span id="spass" ></span>
                     </div>
                 </div>
                 <div class="div22">
                     <div class="divx1">
-                        Password
+                        Confirm Password
                     </div>
                     <div class="divx2">
                         <input type="password" id="conpass" name="conf_pass"/>
-                        <span id="sconf" ></span>
                     </div>
                 </div>
-                
-                <div class="div2222">
+                <div class="div22">
                     <input style="color:white" type="submit" id="submit" class="sub" name="submit" value="Create Account"/>
                 </div>
                 <div class="div23">
                     <a class="log" href="http://127.0.0.1/social_media/login_form.php">Existing User Log-In</a>
                 </div>
-            
-                <div class="lastdiv">   </div>
-            </form>
             </div>
+            <div class="lastdiv">   </div>
         </div>
-        <script type="text/javascript" src="js/register_form2.js">    </script>
-        <!--<script type="text/javascript" src="js/register_form.js">    </script>-->
     </body>
 </html>

@@ -1,11 +1,16 @@
 var pass= document.getElementById("pass");
-//var cpass= document.getElementById("conpass");
-var but=document.getElementById("submit");
-$flag=0;
+var email=document.getElementById("email");
 
-document.getElementById("submit").addEventListener("click",function(){
-    while(cpass.value!= "" && pass.value!="" && cpass.value!=pass.value && $flag==0){
-        alert("Password not matched!");
-        $flag++;
+function validation(){
+    if(email.value==""){
+        document.getElementById("semail").innerHTML = "**Please fill the email field";
+        document.getElementById("spass").innerHTML = "";
+        return false;
     }
-});
+
+    if(pass.value==""){
+        document.getElementById("semail").innerHTML = "";
+        document.getElementById("spass").innerHTML = "**Please fill the password field";
+        return false;
+    }
+}
