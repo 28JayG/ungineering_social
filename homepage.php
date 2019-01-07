@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+    session_start()
+?>
 <html>
     <head>
         <title>HOMEPAGE</title>
@@ -20,14 +23,31 @@
                     </div>
                 </div>
             </div>
+            <form method="POST" action="login_form.php">
             <div class="a2">
                  <input type="submit" name="Login" value="Login" class="a21"/>
             </div>
+            </form>
+            <form method="POST" action="register_form.php">
             <div class="a3">
                 <input type="submit" name="New user" value="New user" class="a21"/>
             </div>
+            </form>
         </div>
         <div class="b">
+            <?php
+                if(isset($_SESSION['id'])){
+                    //echo $_SESSION['id'];
+                    ?>
+                    <h1 class="h2">Write Something Here</h1>
+                    <div class="b2">
+                
+                    </div>
+                    <input type="submit"
+                    <hr></hr><?php
+                }
+            ?>
+            
         <?php
             $hostname = "localhost";
             $username = "root";

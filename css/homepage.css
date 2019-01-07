@@ -90,10 +90,35 @@ p.p1{
     font-style: italic;
     border: none;
 }
+.h2{
+    margin-left: 267px;
+    margin-top: 83px;
+    margin-bottom: -47px;
+    color: gray;
+    border: none;
+}
 .h1{
     font-size: 23px;
 }
 .pa122{
     font-size: 11px;
     margin-top:20px;
+}
+hr{
+    border-bottom: dashed black 2px;
+    margin-left:270px;
+    margin-right: 364px;
+    margin-top: 105px;
+    margin-bottom: -57px;
+}
+.b2{
+   border: solid gray 1px;
+    height: 132px;
+    margin-left: 270px;
+    margin-top: 80px;
+    margin-right: 364px;
+    margin-bottom: 9px;
+    background-color: white;
+    padding-left: 49px;
+    padding-right: 20px;
 }

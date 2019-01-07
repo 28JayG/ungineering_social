@@ -24,7 +24,8 @@
         $_SESSION['id']=$row['id'];
         $_SESSION['name']=$row['name'];
 
-        header('location:dashboard.php');
+        echo $_SESSION['id'];
+        header('location:homepage.php');
     }
     mysqli_close($conn);
 
