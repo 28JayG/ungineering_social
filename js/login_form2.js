@@ -18,11 +18,11 @@ var login_success = function (data) {
 
     if (data.success) {
         alert(data.message);
-        window.location.href = "dashboard.php";
-    } else if(!data.success && data.mode==3){
-        alert("Login failed\nCheck your email or password");
-    } else{
+        window.location.href = "homepage.php";
+    } else if(!data.success && data.mode==2){
         alert("Not registered");
+    } else{
+        alert("Login failed\nCheck your email or password");
     }
 };
 
