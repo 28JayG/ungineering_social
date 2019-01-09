@@ -68,7 +68,7 @@ session_start()
                 <h1 class="h2">Write Something Here</h1>
 
                 <div class="b2">
-                    <form method="post" action="homepage_submit.php" ID="form" >
+                    <form method="post" action="homepage_submit.php" id="status_form" >
                         <textarea rows= "13" cols=130" name="status" id="text"></textarea>
                         <input type="submit" name="submit" value="SUBMIT" id="b21">
                     </form>
@@ -123,5 +123,6 @@ session_start()
             ?>        
         </div>
     </body>
-    //<script type="text/javascript" src="js/homepage.js"></script>
+    <script type="text/javascript" src="js/homepage.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 </html> 
