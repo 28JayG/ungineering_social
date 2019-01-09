@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-    session_start()
+session_start()
 ?>
 <html>
     <head>
@@ -19,36 +19,65 @@
                     </div>
                     <div class="a122">
                         <p class="pa122">A <span class="p2">bit</span> of knowledge is good<br/>
-                         &nbsp &nbsp &nbsp A <span class="p2">byte</span> is better</p>
+                            &nbsp &nbsp &nbsp A <span class="p2">byte</span> is better</p>
                     </div>
                 </div>
             </div>
-            <form method="POST" action="login_form.php">
+
             <div class="a2">
-                 <input type="submit" name="Login" value="Login" class="a21"/>
+                <?php
+                if (isset($_SESSION['id'])) {
+                    ?>
+                    <form method="POST" action="dashboard.php">
+                        <input type="submit" name="dashboard" value="Dashboard" class="a21"/>
+                    </form>
+                    <?php
+                } else {
+                    ?>
+                    <form method="POST" action="login_form.php">
+                        <input type="submit" name="Login" value="Login" class="a21"/>
+                    </form>
+                    <?php
+                }
+                ?>    
             </div>
-            </form>
-            <form method="POST" action="register_form.php">
+
             <div class="a3">
-                <input type="submit" name="New user" value="New user" class="a21"/>
+                <?php
+                if (isset($_SESSION['id'])) {
+                    ?>
+                    <form method="POST" action="#">
+                        <input type="submit" name="logout" value="Logout" class="a21"/>
+                    </form>
+                    <?php
+                } else {
+                    ?>
+                    <form method="POST" action="register_form.php">
+                        <input type="submit" name="New user" value="New user" class="a21"/>
+                    </form>
+    <?php
+}
+?>
             </div>
-            </form>
         </div>
         <div class="b">
+<?php
+if (isset($_SESSION['id'])) {
+    //echo $_SESSION['id'];
+    ?>
+                <h1 class="h2">Write Something Here</h1>
+
+                <div class="b2">
+                    <form method="post" action="homepage_submit.php">
+                        <textarea rows= "6" cols=150" name="status"></textarea>
+                        <input type="submit" name="submit" value="SUBMIT" id="b21">
+                    </form>
+                </div>
+                <hr></hr><?php
+}
+?>
+
             <?php
-                if(isset($_SESSION['id'])){
-                    //echo $_SESSION['id'];
-                    ?>
-                    <h1 class="h2">Write Something Here</h1>
-                    <div class="b2">
-                
-                    </div>
-                    <input type="submit"
-                    <hr></hr><?php
-                }
-            ?>
-            
-        <?php
             $hostname = "localhost";
             $username = "root";
             $db_password = "123456";
@@ -60,7 +89,7 @@
             }
 
             //$sql = "SELECT * FROM statuses";
-            $sql =  "SELECT 
+            $sql = "SELECT 
                         statuses.status,statuses.date_time,users.name
                     FROM
                         statuses
@@ -70,28 +99,28 @@
                         statuses.user_id=users.id
                     ORDER BY 
                         statuses.date_time DESC";
-            
+
             $result = mysqli_query($conn, $sql);
             if (!$result) {
                 die("Error: " . $sql . "<br>" . mysqli_error($conn));
             }
-            
-            
+
+
             while ($row = mysqli_fetch_array($result)) {
-            ?>
-            <div class="b1">
-                <p>
+                ?>
+                <div class="b1">
+                    <p>
                     <h1 class="h1"><?php echo $row['name']; ?></h1>
-                     <p><?php echo $row['status']; ?></p>
-                    <p class="b11"><?php echo $row['date_time']?></p>
-                
-            
-                </p>
-            </div>    	
-            <?php
-            }
-                mysqli_close($conn);
-        ?>        
+                    <p><?php echo $row['status']; ?></p>
+                    <p class="b11"><?php echo $row['date_time'] ?></p>
+
+
+                    </p>
+                </div>    	
+    <?php
+}
+mysqli_close($conn);
+?>        
         </div>
     </body>
     //<script type="text/javascript" src="js/homepage.js"></script>

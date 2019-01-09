@@ -54,6 +54,16 @@ input[value="New user"]{
     background-color: red;
     color: white;
 }
+
+input[value="DAshboard"]{
+    color: red;
+    border: solid black 1px;
+    background-color: white;
+}
+input[value="Logout"]{
+    background-color: red;
+    color: white;
+}
 .a121{
     height: 73px;
 }
@@ -108,7 +118,7 @@ hr{
     border-bottom: dashed black 2px;
     margin-left:270px;
     margin-right: 364px;
-    margin-top: 105px;
+    margin-top: 52px;
     margin-bottom: -57px;
 }
 .b2{
@@ -119,6 +129,10 @@ hr{
     margin-right: 364px;
     margin-bottom: 9px;
     background-color: white;
-    padding-left: 49px;
+    padding-left: 13px;
     padding-right: 20px;
+}
+#b21{
+    margin-left: 1087px;
+    margin-top: 39px;
 }
