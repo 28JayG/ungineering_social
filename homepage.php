@@ -68,8 +68,8 @@ if (isset($_SESSION['id'])) {
                 <h1 class="h2">Write Something Here</h1>
 
                 <div class="b2">
-                    <form method="post" action="homepage_submit.php">
-                        <textarea rows= "6" cols=150" name="status"></textarea>
+                    <form method="post" action="homepage_submit.php" ID="form" >
+                        <textarea rows= "13" cols=130" name="status" id="text"></textarea>
                         <input type="submit" name="submit" value="SUBMIT" id="b21">
                     </form>
                 </div>
