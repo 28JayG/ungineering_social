@@ -46,7 +46,7 @@ session_start()
                 <?php
                 if (isset($_SESSION['id'])) {
                     ?>
-                <form method="POST" action="">
+                <form method="POST" action="logout.php">
                         <input type="submit" name="logout" value="Logout" class="a21"/>
                 </form>
                     <?php
