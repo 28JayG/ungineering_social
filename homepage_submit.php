@@ -21,6 +21,7 @@ session_start();
     if (!$result) {
         die("Error: " . $sql . "<br>" . mysqli_error($conn));
     }
-    echo "your status  ".$status;
+    header("location:homepage.php"); //redirect
+    //echo "your status  ".$status;
     mysqli_close($conn);
 ?>

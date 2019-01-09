@@ -46,25 +46,25 @@ session_start()
                 <?php
                 if (isset($_SESSION['id'])) {
                     ?>
-                <form method="POST" action="logout.php">
+                    <form method="POST" action="logout.php">
                         <input type="submit" name="logout" value="Logout" class="a21"/>
-                </form>
+                    </form>
                     <?php
                 } else {
                     ?>
                     <form method="POST" action="register_form.php">
                         <input type="submit" name="New user" value="New user" class="a21"/>
                     </form>
-    <?php
-}
-?>
+                    <?php
+                }
+                ?>
             </div>
         </div>
         <div class="b">
-<?php
-if (isset($_SESSION['id'])) {
-    //echo $_SESSION['id'];
-    ?>
+            <?php
+            if (isset($_SESSION['id'])) {
+                //echo $_SESSION['id'];
+                ?>
                 <h1 class="h2">Write Something Here</h1>
 
                 <div class="b2">
@@ -74,8 +74,8 @@ if (isset($_SESSION['id'])) {
                     </form>
                 </div>
                 <hr></hr><?php
-}
-?>
+            }
+            ?>
 
             <?php
             $hostname = "localhost";
@@ -117,10 +117,10 @@ if (isset($_SESSION['id'])) {
 
                     </p>
                 </div>    	
-    <?php
-}
-mysqli_close($conn);
-?>        
+                <?php
+            }
+            mysqli_close($conn);
+            ?>        
         </div>
     </body>
     //<script type="text/javascript" src="js/homepage.js"></script>
