@@ -12,14 +12,14 @@ $(document).ready(function () {
     });
 });
 
-var status_success = function (data) {
-    data = JSON.parse(data);
 
-    if (data.success) {
-        //alert(data.message);
+var status_success = function (response) {
+    response = JSON.parse(response);
+
+    if (response.success) {
         window.location.href = "homepage.php";
     } else {
-        alert(data.message);
+        alert(response.message);
     }
 };
 

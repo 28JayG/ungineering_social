@@ -1,5 +1,5 @@
 <?php
-session_start();
+    session_start();
     
     $hostname = "localhost";
     $username = "root";
@@ -28,6 +28,10 @@ session_start();
         echo json_encode($response);
         exit();
     }
+    
+    $response['success'] = true;
+    $response['message'] = "status updated";
+    echo json_encode($response); //it convert associative array into string into a format which is understood by java
     //header("location:homepage.php");
     mysqli_close($conn);
 ?>
