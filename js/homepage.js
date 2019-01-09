@@ -10,6 +10,17 @@ $(document).ready(function () {
         });
         return false;
     });
+    /*$().scroll(function(){
+        var url="homepage_scroll.php";
+        var data=$().serialize();
+        $.ajax(url,{
+            data:data,
+            success:scroll_success;
+            error:on_error;
+            type="POST";
+        });
+        
+    });*/
 });
 
 
@@ -22,6 +33,7 @@ var status_success = function (response) {
         alert(response.message);
     }
 };
+
 
 var on_error = function () {
     alert("something went wrong");

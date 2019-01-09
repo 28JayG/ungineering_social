@@ -29,6 +29,12 @@
         exit();
     }
     
+    if(isset($result='')){
+         $response['success'] = false;
+         $response['message']="please put some data";
+         echo json_encode($resonse);
+    }
+    
     $response['success'] = true;
     $response['message'] = "status updated";
     echo json_encode($response); //it convert associative array into string into a format which is understood by java
