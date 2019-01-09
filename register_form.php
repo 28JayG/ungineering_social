@@ -20,7 +20,7 @@
                 </div>
                 <div class="lastdiv">   </div>
             </div>
-            <form method="post" class="div2" onsubmit="return validation()" action="register_submit2.php">
+            <form method="post" class="div2" onsubmit="return validation()" id="registration_form" action="register_submit2.php">
                 <div class="div21">
                     
                 </div>
@@ -35,7 +35,7 @@
                         Name
                     </div>
                     <div class="divx2">
-                        <input type="text" id ="name" name="name" />
+                        <input type="text" id ="name" class="input" name="name" />
                         <span id="sname" ></span>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                         Email
                     </div>
                     <div class="divx2">
-                        <input type="email" id ="email" name="email"/>
+                        <input type="email" id ="email" class="input" name="email"/>
                         <span id="semail" ></span>
                     </div>
                 </div>
@@ -53,7 +53,7 @@
                         Password
                     </div>
                     <div class="divx2">
-                        <input type="password" id="pass" name="password"/>
+                        <input type="password" id="pass" class="input" name="password"/>
                         <span id="spass" ></span>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                         Password
                     </div>
                     <div class="divx2">
-                        <input type="password" id="conpass" name="conf_pass"/>
+                        <input type="password" id="conpass" class="input" name="conf_pass"/>
                         <span id="sconf" ></span>
                     </div>
                 </div>
@@ -78,7 +78,8 @@
             </form>
             </div>
         </div>
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js">  </script>
         <script type="text/javascript" src="js/register_form2.js">    </script>
-        <!--<script type="text/javascript" src="js/register_form.js">    </script>-->
+        <script type="text/javascript" src="js/register_form3.js">    </script>
     </body>
 </html>

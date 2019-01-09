@@ -20,7 +20,7 @@
                 </div>
                 <div class="lastdiv">   </div>
             </div>
-            <form method="post" class="div2" action="login_submit.php" onsubmit="return validation()">
+            <form method="post" class="div2" id="login_form" action="login_submit.php" onsubmit="return validation()">
                 <div class="div21">
 
                 </div>
@@ -34,7 +34,7 @@
                         Email
                     </div>
                     <div class="divx2">
-                        <input type="email" id="email" name="email"/>
+                        <input type="email" class="input" id="email" name="email"/>
                         <span id="semail" ></span>
                     </div>
                 </div>
@@ -43,12 +43,12 @@
                         Password
                     </div>
                     <div class="divx2">
-                        <input type="password" id="pass" name="password"/>
+                        <input type="password" class="input" id="pass" name="password"/>
                         <span id="spass" ></span>
                     </div>
                 </div>
 
-                <div class="div22">
+                <div class="div2222">
                     <input style="color:white" type="submit" id="submit" class="sub" name="submit" value="Log-in"/>
                 </div>
                 <div class="div23">
@@ -73,6 +73,8 @@
                 <div class="lastdiv">   </div>
             </form>
         </div>
-        <script type="text/javascript" src="js/login_form.js">    </script>
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js">  </script>
+        <script type="text/javascript" src="js/login_form.js">        </script>
+        <script type="text/javascript" src="js/login_form2.js">       </script>
     </body>
 </html>

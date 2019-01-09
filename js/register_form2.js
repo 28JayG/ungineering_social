@@ -8,7 +8,7 @@ var str=pass.length;
 function validation(){
 
     if(user.value==""){
-        document.getElementById("sname").innerHTML = "**Please fill the name field";
+        document.getElementById("sname").innerHTML = "Please fill the name field";
         document.getElementById("semail").innerHTML = "";
         document.getElementById("spass").innerHTML = "";
         document.getElementById("sconf").innerHTML = "";
@@ -17,7 +17,7 @@ function validation(){
 
     if(email.value==""){
         document.getElementById("sname").innerHTML = "";
-        document.getElementById("semail").innerHTML = "**Please fill the email field";
+        document.getElementById("semail").innerHTML = "Please fill the email field";
         document.getElementById("spass").innerHTML = "";
         document.getElementById("sconf").innerHTML = "";
         return false;
@@ -26,7 +26,7 @@ function validation(){
     if(pass.value==""){
         document.getElementById("sname").innerHTML = "";
         document.getElementById("semail").innerHTML = "";
-        document.getElementById("spass").innerHTML = "**Please fill the password field";
+        document.getElementById("spass").innerHTML = "Please fill the password field";
         document.getElementById("sconf").innerHTML = "";
         return false;
     }
@@ -35,7 +35,7 @@ function validation(){
         document.getElementById("sname").innerHTML = "";
         document.getElementById("semail").innerHTML = "";
         document.getElementById("spass").innerHTML = "";
-        document.getElementById("sconf").innerHTML = "**Please fill the password field";
+        document.getElementById("sconf").innerHTML = "Please fill the password field";
         return false;
     }
 

@@ -2,9 +2,9 @@ p{
     color: #595959;
     font-size: 30px;
     text-align: left;
-    margin-left: 109px;
-    margin-top: 0px;
-    margin-bottom: 20px;
+    margin-left: 30%;
+    margin-top: 0%;
+    margin-bottom: 5.5%;
     font-family: sans-serif;
 }
 
@@ -12,7 +12,7 @@ p1{
     color: #595959;
     font-size: 30px;
     text-align: center;
-    margin-left:19px;
+    margin-left:2.4%;
     font-family: sans-serif;
 }
 
@@ -27,14 +27,14 @@ body{
     margin-left: 93px;
 }
 
-input{
+.input{
     //color: green;
     font-size: 18px;
     padding-top:10px;
     padding-bottom: 9px;
     background-color: white;
     text-align: left;
-    width: 400px;
+    width: 70%;
     padding-left:2px;
     border:none;
     border-radius: 3px;
@@ -45,7 +45,7 @@ input{
 .log{
     color: #D25050;
     text-decoration: underline;
-    margin-left: 344px;
+    margin-left: 38.2%;
     font-family: sans-serif;
     font-size: 15px;
 }
@@ -53,7 +53,7 @@ input{
 .log1{
     color: crimson;
     text-decoration: underline;
-    margin-left: 109px;
+    margin-left: 30%;
     font-family: sans-serif;
     font-size: 15px;
 }
@@ -101,7 +101,7 @@ input{
     height: 61.2%;
     display: block;
     position: relative;
-    margin-bottom: 65px;    
+    margin-bottom: 19.9%;    
 }
 
 .div21{
@@ -114,7 +114,7 @@ input{
     //border: solid red 1px;
     height: 7%;
     display: block;
-    margin-left:20px;
+    margin-left:2.2%;
     margin-bottom: 3px;
     position: relative;
 }
@@ -122,8 +122,8 @@ input{
     //border: solid red 1px;
     height: 20%;
     display: block;
-    margin-top: 7px;
-    margin-bottom: 13px;
+    margin-top: 1%;
+    margin-bottom: 2%;
     position: relative;
 }
 
@@ -132,8 +132,8 @@ input{
     height: 9.2%;
     display: block;
     position: relative;
-    //padding-top: 190px;
-    padding-left: 73px;
+    padding-top: 0%;
+    padding-left: 8%;
 }
 
 .divx1{
@@ -163,14 +163,16 @@ input{
 }
 
 .sub{
-    padding-left: 150px;
-    padding-right: 253px;
-    margin-left: 189px;
+    width: 45.9%;
+    padding-left: 17%;
+    padding-right: 17.8%;
+    margin-left: 21.4%;
+    border:none;
     background-color: #F04C4D;
     font-weight: bold;
     font-family: sans-serif;
-    padding-top: 11px;
-    padding-bottom: 9px;
+    padding-top: 1.2%;
+    padding-bottom: 1.1%;
     border-radius: 2px;
     font-size: 13px;
 }
@@ -188,8 +190,8 @@ input{
 .div2222{
     height: 7%;
     display: block;
-    margin-left: 20px;
-    margin-top: 15px;
+    margin-left: 2.3%;
+    margin-top: 1.8%;
     position: relative;
 }
 
@@ -201,4 +203,5 @@ span{
     color: red;
     font-size: 12px;
     font-style: bold;
+    width:70%;
 }
