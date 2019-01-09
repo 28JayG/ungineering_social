@@ -27,7 +27,7 @@ session_start();
                     My Dashboard
                 </div>
                 <div class="logout">
-                    <a href="login_form.php"><button id="logout">Logout</button></a>
+                    <a href="logout.php"><button id="logout">Logout</button></a>
                 </div>
             </div>
             <?php
@@ -42,7 +42,7 @@ session_start();
             } else {
                 ?>
                 <div class="account_details">
-                    <form method="post" action="dashboard_update.php">
+                    <form method="post" action="dashboard_submit.php" id="dashboard" >
                         <div class="account_heading">
                             <h1>My Account Details</h1>
                         </div>
@@ -124,6 +124,9 @@ session_start();
             <div class="bottom_margin">
             </div>
         </div>
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/dashboard.js"></script>
     </body>
 </html>
 
+ 

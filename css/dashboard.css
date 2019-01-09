@@ -2,11 +2,11 @@
     box-sizing: border-box;
 }
 div.dashboard_wrapper{
-    height: 600px;
+    height: 650px;
     width: 100%;
 }
 div.header{
-    height: 70px;
+    height: 120px;
     display: block;
 }
 .img{
@@ -16,7 +16,7 @@ div.header{
 }
 .logo{
     float:left;
-    width: 10%;
+    width: 15%;
 }
 .a{
     float:left;
@@ -29,25 +29,25 @@ div.header{
     height: 17%;
 }
 .ungineering{
-    border-bottom: solid 1px black;
-    margin: 3% 77% 0% 0%;
+    border-bottom: solid 1px #CFCACB;
+    margin: 20px 337px 0px 0px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     font-family: sans-serif;
 }
 .p1{
     color: red;
 }
 .bit{
-    margin: 0% 0% 0% 3%;
-    font-size: 8px;
+    margin: 0px 0px 0px 15px;
+    font-size: 13px;
 }
 .byte{
-    margin: 0% 0% 0% 8%;
-    font-size: 8px;
+    margin: 0px 0px 0px 45px;
+    font-size: 13px;
 }
 div.dashboard{
-    padding: 4.5% 0% 1% 20%;
+    padding: 7% 0% 1% 20%;
     float: left;
     width: 30%;
     font-size: 75%;
@@ -55,7 +55,7 @@ div.dashboard{
     font-family: sans-serif;
 }
 div.logout{
-    padding: 4% 1% 1% 0%;
+    padding: 6.5% 1% 1% 0%;
     float: left;
     width: 7%;
 }
