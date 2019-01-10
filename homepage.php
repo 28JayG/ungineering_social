@@ -42,7 +42,7 @@ session_start()
                 <?php
                 if (isset($_SESSION['id'])) {
                     ?>
-                    <a href="logout.php.php"><button type="button" class="button2">Logout</button></a>
+                    <a href="logout.php"><button type="button" class="button2">Logout</button></a>
                     <?php
                 } else {
                     ?>
