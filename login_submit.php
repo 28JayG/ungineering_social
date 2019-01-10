@@ -19,7 +19,7 @@
     $email=$_POST['email'];
     $password=$_POST['password'];
 
-    $sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
+    $sql = "SELECT * FROM users WHERE email='$email'";
     $result = mysqli_query($conn, $sql);
     if (!$result) {
         //die("Error: " . $sql . "<br>" . mysqli_error($conn));
@@ -28,19 +28,22 @@
         $response['message'] = "Error: " . $sql . "<br>" . mysqli_error($conn);
         echo json_encode($response);
         exit();
-    } else if ($row=mysqli_fetch_array($result)) {
-        $_SESSION['id']=$row['id'];
-        $_SESSION['name']=$row['name'];
-
-        $response['success'] = true;
-        $response['message'] = "Hello " . $row['name'];
-
-        //header('location:dashboard.php');
-    } else{
-        $response['success'] = false;
-        $response['mode'] = 3;
-        //$response['message'] = "Login failed";
     }
+    if ($row=mysqli_fetch_array($result)) {
+        if($password==$row['password']){
+            $_SESSION['id']=$row['id'];
+            $_SESSION['name']=$row['name'];
+            $response['success'] = true;
+            $response['message'] = "Hello " . $row['name'];
+
+            //header('location:dashboard.php');
+        }
+        else{
+            $response['success'] = false;
+            $response['mode'] = 3;
+            //$response['message'] = "Login failed";
+        }
+    } 
     echo json_encode($response);
     mysqli_close($conn);
 

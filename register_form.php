@@ -1,8 +1,9 @@
 <?php
     session_start();
-    if(isset($_SESSION['id'])){
-        header('location: homepage.php');
-    }
+    //if(isset($_SESSION['id'])){
+    //    header('location: homepage.php');
+        
+    //}
 ?>
 
 <!DOCTYPE html>

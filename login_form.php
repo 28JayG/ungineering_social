@@ -1,8 +1,20 @@
 <?php
     session_start();
     if(isset($_SESSION['id'])){
-        header('location: homepage.php');
-    }
+        //header('location: homepage.php');
+        ?>
+        <html>
+            <head>
+                <title>Login Form</title>
+                <link rel="stylesheet" href="css/already_logged_in.css"/>
+            </head>
+            <body>
+                <p>You  are already logged-in</p><br/>
+                <a id="anchor" class="log1" href="homepage.php"> Click here to go to home page</a>
+            </body>
+        </html>
+        <?php
+    } else{
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +40,7 @@
                     <p class="p">
                         <b>Existing User<br/> Log-in <br/></b>
                     </p>
-                    <a class="log1" href="http://127.0.0.1/social_media/register_form.php">New User Create Account</a>
+                    <a class="log1" href="register_form.php">New User Create Account</a>
                 </div>  
                 <form method="post" class="div2" id="login_form" action="login_submit.php" onsubmit="return validation()">
                 <div class="div221">
@@ -60,7 +72,7 @@
                     <input style="color:white" type="submit" id="submit" class="sub" name="submit" value="Log-in"/>
                 </div>
                 <div class="div23">
-                    <a class="log" href="http://127.0.0.1/social_media/login_form.php">New User Create Account</a>
+                    <a class="log" href="register_form.php">New User Create Account</a>
                 </div>
                 </form>
             </div>
@@ -72,3 +84,5 @@
         
     </body>
 </html>
+<?php
+}
