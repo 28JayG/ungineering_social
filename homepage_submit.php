@@ -20,7 +20,9 @@
     $id = $_SESSION['id'];
 
     if ($status == NULL) {
-        alert("please put some status");
+        $response['success']= false;
+        $response['message']= "please put some status";
+        echo json_encode($response);
     } else {
         $sql = "INSERT INTO statuses(status,user_id)
                     VALUES('$status','$id')";
