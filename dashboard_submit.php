@@ -23,8 +23,13 @@ $password = $_POST['password'];
 $college = $_POST['college'];
 $phone_no = $_POST['phone_number'];
 
-if (isset($user_id)) {
-    $sql1 = "update users
+if ($name == "" or $email == "" or $password =="" ) {
+    $response['success'] = false;
+    $response['message'] = "Fill the required field";
+    echo json_encode($response);
+} else {
+    if (isset($user_id)) {
+        $sql1 = "update users
             set
                 name = '$name',
                 email = '$email',
@@ -33,16 +38,19 @@ if (isset($user_id)) {
                 phone_no = '$phone_no'
             where
                 id = $user_id";
-    if (!mysqli_query($conn, $sql1)) {
-        //die("Error:" . $sql1 . "<br/>" . mysqli_error($conn));
-        $response['success'] = false;
-        $response['message'] = "Error: " . $sql . "<br>" . mysqli_error($conn);
+        if (!mysqli_query($conn, $sql1)) {
+            //die("Error:" . $sql1 . "<br/>" . mysqli_error($conn));
+            $response['success'] = false;
+            $response['message'] = "Error: " . $sql . "<br>" . mysqli_error($conn);
+            echo json_encode($response);
+            exit();
+        }
+
+        $response['success'] = true;
+        $response['message'] = "Update Successful";
         echo json_encode($response);
-        exit();
+        //header('location: dashboard.php');
     }
-    $response['success']= true;
-    $response['message']= "Update Successful";
-    //header('location: dashboard.php');
 }
 mysqli_close($conn);
 ?>

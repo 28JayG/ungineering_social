@@ -40,87 +40,111 @@ session_start();
 
                 <?php
             } else {
+                $id = $_SESSION['id'];
+                $hostname = "localhost";
+                $username = "root";
+                $db_password = "ravishankar";
+                $db_name = "social_media";
+
+                $conn = mysqli_connect($hostname, $username, $db_password, $db_name);
+                if (!$conn) {
+                    die("Connection failed:" . mysqli_connect_error());
+                }
+
+                $sql = "SELECT * FROM users WHERE id = $id";
+
+                $result = mysqli_query($conn, $sql);
+                if (!$result) {
+                    die("Error: " . $sql . "<br>" . mysqli_error($conn));
+                }
+                $row = mysqli_fetch_array($result);
                 ?>
-                <div class="account_details">
-                    <form method="post" action="dashboard_submit.php" id="dashboard" >
-                        <div class="account_heading">
-                            <h1>My Account Details</h1>
-                        </div>
-                        <div class="name_detail">
-                            <div class="name">Name
-                            </div>    
-                            <div class="name_text">
-                                <input type="text" class="name1" name="name"/>
-                            </div>
-                        </div>
-                        <div class="email_detail">
-                            <div class="email">Email
-                            </div>
-                            <div class="email_text">
-                                <input type="text" class="email1" name="email"/>
-                            </div>
-                        </div>
-                        <div class="password_detail">
-                            <div class="password">Password
-                            </div>
-                            <div class="password_text">
-                                <input type="password" class="password1" name="password"/>
-                            </div>
-                        </div>
-                        <div class="college_detail">
-                            <div class="college">College
-                            </div>
-                            <div class="college_text">
-                                <input type="text" class="college1" name="college"/>
-                            </div>
-                        </div>
-                        <div class="phone_detail">
-                            <div class="phone">Phone Number
-                            </div>
-                            <div class="phone_text">
-                                <input type="text" class="phone1" name="phone_number"/>
-                            </div>
-                        </div>
-                        <div class="update">
-                            <input type="submit" name="update" class="update_dashboard" value="Update"/>
-                        </div>
-                    </form>
-                </div>
-                <div class="my_post">
-                    <h1 id="post">My Post</h1>
-                    <?php
-                    $user_id = $_SESSION['id'];
 
-                    $hostname = "localhost";
-                    $username = "root";
-                    $db_password = "ravishankar";
-                    $db_name = "social_media";
-
-                    $conn = mysqli_connect($hostname, $username, $db_password, $db_name);
-                    if (!$conn) {
-                        die("Connection failed:" . mysqli_connect_error());
-                    }
-
-                    $sql = "select * from statuses WHERE user_id = $user_id";
-                    $result = mysqli_query($conn, $sql);
-                    if (!$result) {
-                        die("Error: " . $sql . "<br>" . mysqli_error($conn));
-                    }
-
-                    while ($row = mysqli_fetch_array($result)) {
-                        ?>
-                        <div class="status1">
-                            <p class="date_time"><?php echo $row['date_time'] ?></p>
-                            <p class="status"><?php echo $row['status'] ?></p>
-                        </div>
+                <div class="account_post">
+                    <div class="account_details">
+                        <form method="post" action="dashboard_submit.php" id="dashboard" >
+                            <div class="account_heading">
+                                <h1>My Account Details</h1>
+                            </div>
+                            <div class="name_detail">
+                                <div class="name">Name
+                                </div>    
+                                <div class="name_text">
+                                    <input type="text" class="name1" name="name" value="<?php echo $row['name']; ?>"/>
+                                </div>
+                            </div>
+                            <div class="email_detail">
+                                <div class="email">Email
+                                </div>
+                                <div class="email_text">
+                                    <input type="text" class="email1" name="email" value="<?php echo $row['email']; ?>"/>
+                                </div>
+                            </div>
+                            <div class="password_detail">
+                                <div class="password">Password
+                                </div>
+                                <div class="password_text">
+                                    <input type="password" class="password1" name="password" value="<?php echo $row['password']; ?>"/>
+                                </div>
+                            </div>
+                            <div class="college_detail">
+                                <div class="college">College
+                                </div>
+                                <div class="college_text">
+                                    <input type="text" class="college1" name="college" value="<?php echo $row['college']; ?>"/>
+                                </div>
+                            </div>
+                            <div class="phone_detail">
+                                <div class="phone">Phone Number
+                                </div>
+                                <div class="phone_text">
+                                    <input type="text" class="phone1" name="phone_number" value="<?php echo $row['phone_no']; ?>"/>
+                                    <?php
+                                    mysqli_close($conn);
+                                    ?>
+                                </div>
+                            </div>
+                            <div class="update">
+                                <input type="submit" name="update" class="update_dashboard" value="Update"/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="my_post">
+                        <h1 id="post">My Post</h1>
                         <?php
-                    }
-                    mysqli_close($conn);
-                    ?> 
-                </div>
-                <?php
-            }
-            ?>
+                        $user_id = $_SESSION['id'];
+
+                        $hostname = "localhost";
+                        $username = "root";
+                        $db_password = "ravishankar";
+                        $db_name = "social_media";
+
+                        $conn = mysqli_connect($hostname, $username, $db_password, $db_name);
+                        if (!$conn) {
+                            die("Connection failed:" . mysqli_connect_error());
+                        }
+
+                        $sql = "select * from statuses WHERE user_id = $user_id";
+                        $result = mysqli_query($conn, $sql);
+                        if (!$result) {
+                            die("Error: " . $sql . "<br>" . mysqli_error($conn));
+                        }
+
+                        while ($row = mysqli_fetch_array($result)) {
+                            ?>
+                            <div class="status1">
+                                <p class="date_time"><?php echo $row['date_time'] ?></p>
+                                <p class="status"><?php echo $row['status'] ?></p>
+                            </div>
+                            <?php
+                        }
+                        mysqli_close($conn);
+                        ?> 
+                    </div>
+                    <?php
+                }
+                ?>
+            </div>
             <div class="bottom_margin">
             </div>
         </div>
@@ -129,4 +153,4 @@ session_start();
     </body>
 </html>
 
- 
+

@@ -16,7 +16,7 @@ var dashboard_success = function (data) {
     data = JSON.parse(data);
     if (data.success) {
         alert(data.message);
-        window.location.href = "dashboard.php";
+        //window.location.href = "dashboard.php";
     } else {
         alert(data.message);
     }
