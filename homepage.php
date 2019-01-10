@@ -28,15 +28,11 @@ session_start()
                 <?php
                 if (isset($_SESSION['id'])) {
                     ?>
-                    <form method="POST" action="dashboard.php">
-                        <input type="submit" name="dashboard" value="Dashboard" class="a21"/>
-                    </form>
+                    <a href="dashboard.php"><button type="button" class="a21">Dashboard</button></a>
                     <?php
                 } else {
                     ?>
-                    <form method="POST" action="login_form.php">
-                        <input type="submit" name="Login" value="Login" class="a21"/>
-                    </form>
+                    <a href="login_form.php"><button type="button" class="a21">Login</button></a>
                     <?php
                 }
                 ?>    
@@ -46,15 +42,11 @@ session_start()
                 <?php
                 if (isset($_SESSION['id'])) {
                     ?>
-                    <form method="POST" action="logout.php">
-                        <input type="submit" name="logout" value="Logout" class="a21"/>
-                    </form>
+                    <a href="logout.php.php"><button type="button" class="a31">Logout</button></a>
                     <?php
                 } else {
                     ?>
-                    <form method="POST" action="register_form.php">
-                        <input type="submit" name="New user" value="New user" class="a21"/>
-                    </form>
+                    <a href="register_form.php"><button type="button" class="a31">New User</button></a>
                     <?php
                 }
                 ?>
@@ -63,7 +55,6 @@ session_start()
         <div class="b">
             <?php
             if (isset($_SESSION['id'])) {
-                //echo $_SESSION['id'];
                 ?>
                 <h1 class="h2">Write Something Here</h1>
 
@@ -88,7 +79,6 @@ session_start()
                 die("Connection failed: " . mysqli_connect_error());
             }
 
-            //$sql = "SELECT * FROM statuses";
             $sql = "SELECT 
                         statuses.status,statuses.date_time,users.name
                     FROM
