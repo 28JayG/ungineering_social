@@ -8,57 +8,57 @@ session_start()
         <link rel="stylesheet" href= "css/homepage.css"/>
     </head>
     <body>
-        <div class="a">
-            <div class="a1">
-                <div class="a11">
-                    <img src="img/img.jpg" alt="Sample Image" class="a111"/>
+        <div class="header">
+            <div class="section1">
+                <div class="img">
+                    <a href="homepage.php"><img src="img/img.jpg" alt="Sample Image" class="a111"/></a>
                 </div>
-                <div class="a12">
-                    <div class="a121">
+                <div class="text">
+                    <div class="text1">
                         <p class="p1"><span class="p2">un</span>gineering</p>
                     </div>
-                    <div class="a122">
+                    <div class="text2">
                         <p class="pa122">A <span class="p2">bit</span> of knowledge is good<br/>
                             &nbsp &nbsp &nbsp A <span class="p2">byte</span> is better</p>
                     </div>
                 </div>
             </div>
 
-            <div class="a2">
+            <div class="section2">
                 <?php
                 if (isset($_SESSION['id'])) {
                     ?>
-                    <a href="dashboard.php"><button type="button" class="a21">Dashboard</button></a>
+                    <a href="dashboard.php"><button type="button" class="button1">Dashboard</button></a>
                     <?php
                 } else {
                     ?>
-                    <a href="login_form.php"><button type="button" class="a21">Login</button></a>
+                    <a href="login_form.php"><button type="button" class="button1">Login</button></a>
                     <?php
                 }
                 ?>    
             </div>
 
-            <div class="a3">
+            <div class="section3">
                 <?php
                 if (isset($_SESSION['id'])) {
                     ?>
-                    <a href="logout.php.php"><button type="button" class="a31">Logout</button></a>
+                    <a href="logout.php.php"><button type="button" class="button2">Logout</button></a>
                     <?php
                 } else {
                     ?>
-                    <a href="register_form.php"><button type="button" class="a31">New User</button></a>
+                    <a href="register_form.php"><button type="button" class="button2">New User</button></a>
                     <?php
                 }
                 ?>
             </div>
         </div>
-        <div class="b">
+        <div class="footer">
             <?php
             if (isset($_SESSION['id'])) {
                 ?>
                 <h1 class="h2">Write Something Here</h1>
 
-                <div class="b2">
+                <div class="put_status">
                     <form method="post" action="homepage_submit.php" id="status_form" >
                         <textarea rows= "13" cols=131" name="status" id="text"></textarea>
                         <input type="submit" name="submit" value="SUBMIT" id="b21">
@@ -98,11 +98,11 @@ session_start()
 
             while ($row = mysqli_fetch_array($result)) {
                 ?>
-                <div class="b1">
+                <div class="get_status">
                     <p>
                     <h1 class="h1"><?php echo $row['name']; ?></h1>
                     <p><?php echo $row['status']; ?></p>
-                    <p class="b11"><?php echo $row['date_time'] ?></p>
+                    <p class="time"><?php echo $row['date_time'] ?></p>
 
 
                     </p>
