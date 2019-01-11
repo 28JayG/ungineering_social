@@ -103,7 +103,7 @@ p.p1{
 hr{
     border-bottom: dashed black 2px;
     margin-left:258px;
-    margin-right: 212px;
+    margin-right: 287px;
     margin-top: 52px;
     margin-bottom: -27px;
 }
@@ -120,7 +120,7 @@ hr{
 }
 #b21{
     margin-left: 665px;
-    margin-top: 14px;
+    margin-top: 6px;
     color: white;
     background-color: red;
     font-weight: bold;
@@ -129,12 +129,12 @@ hr{
 #text{
     padding-top: 1px;
     padding-bottom: 13px;
-    padding-right: 7px;
+    padding-right: 12px;
+    height:167px;
 }
 #status_form{
     width: 787px;
     height: 170px;
-    border: solid #f4f4f4 1px;
 }
 
 .button1{
