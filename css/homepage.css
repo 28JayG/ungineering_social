@@ -3,42 +3,42 @@
     border: solid white 1px;
 }
 .header{
-    height: 150px;
-    width: 1885px;
+    height: 121px;
+    width: 1335px;
 }
 .footer{
     background-color:#f4f4f4;
 }
 .section1{
     float: left;
-    height: 150px;
-    width: 1280px;
+    height: 122px;
+    width: 730px;
 }
 .section2{
     float: left;
-    height: 150px;
+    height: 120px;
     width: 300px;
-    line-height: 241px;
+    line-height: 191px;
     text-align: right;
 }
 .section3{
     float: left;
-    height: 150px;
+    height: 120px;
     width: 300px;
-    line-height: 241px;
+    line-height: 191px;
     text-align: left;
     padding-left: 11px;
 }
 .img{
     float: left;
-    height: 150px;
+    height: 140px;
     width: 177px;
     margin:-18px;
 }
 .text{
     float: left;
-    height: 150px;
-    width: 211px;
+    height: 122px;
+    width: 212px;
 }
 input[type="submit"]{
     color: red;
@@ -46,32 +46,34 @@ input[type="submit"]{
     height:34px;
 }
 .text1{
-    height: 73px;
+    height: 66px;
 }
 .text2{
-    height: 73px;
+    height: 54px;
 }
 span.p2{
     color: red;   
 }
 p.p1{
     font-weight: bold;
-    font-size: 40px;
-    text-align: center;
+    font-size: 27px;
     border-bottom: solid black 1px;
     color: black;
+    height:35px;
+    width:148px;
 }
 .a111{
-    margin: 48px;
+    margin: 46px;
     width:116px;
-    margin-bottom: 0px;
+    margin-bottom: -14px;
+    margin-top: 11px;
 }
 .get_status{
     border: solid gray 1px;
-    height: 176px;
-    width:1100px;
-    margin-left: 350px;
-    margin-top: 51px;
+    height: 152px;
+    width:787px;
+    margin-left: 255px;
+    margin-top: 36px;
     margin-right: 364px;
     margin-bottom: 33px;
     background-color: white;
@@ -84,19 +86,19 @@ p.p1{
     border: none;
 }
 .h2{
-    margin-left: 350px;
-    margin-top: 83px;
+    margin-left: 253px;
+    margin-top: 43px;
     margin-bottom: -47px;
-    font-size:40px;
+    font-size:32px;
     color: gray;
     border: none;
 }
 .h1{
-    font-size: 23px;
+    font-size: 17px;
 }
 .pa122{
     font-size: 11px;
-    margin-top:20px;
+    margin-top:0px;
 }
 hr{
     border-bottom: dashed black 2px;
@@ -107,9 +109,9 @@ hr{
 }
 .put_status{
    border: solid gray 1px;
-    height: 217px;
-    width:1100px;
-    margin-left: 350px;
+    height: 170px;
+    width:787px;
+    margin-left: 255px;
     margin-top: 80px;
     margin-right: 364px;
     margin-bottom: 9px;
@@ -117,22 +119,26 @@ hr{
     padding-right: 124px;
 }
 #b21{
-    margin-left: 937px;
-    margin-top: 11px;
+    margin-left: 665px;
+    margin-top: 9px;
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    width: 118px;
 }
 #text{
     padding-top: 1px;
     padding-bottom: 13px;
-    padding-right: 23px;
+    padding-right: 7px;
 }
 #status_form{
-    width: 1097px;
-    height: 212px;
+    width: 784px;
+    height: 166px;
 }
 
 .button1{
     width: 131px;
-    height: 32px;
+    height: 33px;
     border: solid red 1px;
     background-color: white;
     color: red;
