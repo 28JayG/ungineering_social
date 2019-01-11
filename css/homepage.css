@@ -132,8 +132,9 @@ hr{
     padding-right: 7px;
 }
 #status_form{
-    width: 784px;
-    height: 166px;
+    width: 787px;
+    height: 170px;
+    border: solid #f4f4f4 1px;
 }
 
 .button1{
