@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+div.dashboard_wrapper{
+    height: 650px;
+    width: 100%;
+}
+div.header{
+    height: 120px;
+    display: block;
+}
+.img{
+    margin-left: 25%;
+    height: 100%;
+    width: 75%;
+}
+.logo{
+    float:left;
+    width: 15%;
+}
+.a{
+    float:left;
+    width:40%;
+}
+.a1{
+    height: 33%;
+}
+.a2,.a3{
+    height: 17%;
+}
+.ungineering{
+    border-bottom: solid 1px #CFCACB;
+    margin: 20px 337px 0px 0px;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.p1{
+    color: red;
+}
+.bit{
+    margin: 0px 0px 0px 15px;
+    font-size: 13px;
+}
+.byte{
+    margin: 0px 0px 0px 45px;
+    font-size: 13px;
+}
+div.dashboard{
+    padding: 7% 0% 1% 20%;
+    float: left;
+    width: 30%;
+    font-size: 75%;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+div.logout{
+    padding: 6.5% 1% 1% 0%;
+    float: left;
+    width: 7%;
+}
+#logout{
+    padding: 2px 20px;
+    border: solid 1px red;
+    color: red;
+    font-size: 75%;
+    background-color: white;
+}
+.account_post{
+    width: 100%;
+}
+div.account_details{
+    background-color: #F4F4F4;
+    margin-left: 20px;
+    float: left;
+    width: 46%;
+    height: 73%;
+}
+.account_heading{
+    display: block;
+    height: 80px;
+    padding: 0% 1% 1% 35%;
+}
+h1{
+    padding-top: 30px;
+    font-family: sans-serif;
+    color: #747374;
+}
+.name_detail,.email_detail,.password_detail,.college_detail,.phone_detail{
+    display: block;
+    height: 55px;    
+}
+.name,.email,.password,.college,.phone{
+    float: left;
+    width: 35%;
+    padding-left: 60px;
+    padding-top: 5px;
+    font-family: sans-serif;
+}
+.name1,.email1,.password1,.college1,.phone1{
+    font-size: 20px;
+    height: 35px;
+    width: 100%;
+}
+.name_text,.email_text,.password_text,.college_text,.phone_text{
+    float: left;
+    width: 50%;
+}
+.update{
+    margin: 0% 50.5% 0% 35%;
+    border-color: red;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+}
+.update_dashboard{
+    padding: 5px 20px;
+    border-color: red;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: red;
+    color: white;
+}
+div.my_post{
+    background-color: #F4F4F4;
+    margin-left: 40px; 
+    padding: 20px;
+    float: left;
+    width: 48%;
+}
+#post{
+    padding-left: 5px;
+}
+.status1{
+    margin: 15px 5px;
+    padding: 3px 10px;
+    text-align: left;
+    background-color: white;
+    line-height: 20px;
+    font-size: 15px;
+    height: 84px;
+}
+.date_time,.status{  
+    padding-left: 5%;
+    line-height: 15px;
+}
+.date_time{
+    font-style: italic;
+}
+.bottom_margin{
+    margin: 3% 0% 0% 0%;
+    float: left;
+    width: 100%;
+    height: 130px;
+    background-color: #3A3A3A;
+}
+    
+    
