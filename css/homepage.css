@@ -64,6 +64,7 @@ p.p1{
 .a111{
     margin: 48px;
     width:116px;
+    margin-bottom: 0px;
 }
 .get_status{
     border: solid gray 1px;
