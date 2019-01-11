@@ -28,7 +28,9 @@
             <div class="div11">
                 <div class="div1">
                     <div class="updiv">
-                        <img src="Image/95146958-chat-speech-icon-e-commerce-sign-graph-symbol-for-your-web-site-design-logo-app-ui-vector-illustrati.jpg" alt="Status" class="image"/>
+                        <a href="homepage.php">
+                            <img src="Image/95146958-chat-speech-icon-e-commerce-sign-graph-symbol-for-your-web-site-design-logo-app-ui-vector-illustrati.jpg" alt="Status" class="image"/>
+                        </a>
                     </div>
                 </div>
                 <div class="div2">
