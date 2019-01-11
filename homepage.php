@@ -5,6 +5,7 @@ session_start()
 <html>
     <head>
         <title>HOMEPAGE</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/95146958-chat-speech-icon-e-commerce-sign-graph-symbol-for-your-web-site-design-logo-app-ui-vector-illustrati.jpg" />
         <link rel="stylesheet" href= "css/homepage.css"/>
     </head>
     <body>

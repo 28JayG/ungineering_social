@@ -5,7 +5,7 @@ $user_id = $_SESSION['id'];
 
 $hostname = "localhost";
 $username = "root";
-$db_password = "ravishankar";
+$db_password = "123456";
 $db_name = "social_media";
 
 $conn = mysqli_connect($hostname, $username, $db_password, $db_name);

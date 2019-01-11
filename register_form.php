@@ -9,8 +9,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Register Form</title>
+        <title>Register Form</title>
         <link rel="stylesheet" href="css/style.css"/>
+        <link rel="shortcut icon" type="image/x-icon" href="img/95146958-chat-speech-icon-e-commerce-sign-graph-symbol-for-your-web-site-design-logo-app-ui-vector-illustrati.jpg" />
     </head>
     <body>
         <div class="container">
@@ -18,7 +19,7 @@
                 <div class="div1">
                     <div class="updiv">
                         <a href="homepage.php">
-                            <img src="Image/95146958-chat-speech-icon-e-commerce-sign-graph-symbol-for-your-web-site-design-logo-app-ui-vector-illustrati.jpg" alt="Status" class="image"/>
+                            <img src="img/95146958-chat-speech-icon-e-commerce-sign-graph-symbol-for-your-web-site-design-logo-app-ui-vector-illustrati.jpg" alt="Status" class="image"/>
                         </a>
                     </div>
                 </div>

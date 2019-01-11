@@ -7,6 +7,7 @@
             <head>
                 <title>Login Form</title>
                 <link rel="stylesheet" href="css/already_logged_in.css"/>
+                <link rel="shortcut icon" type="image/x-icon" href="img/95146958-chat-speech-icon-e-commerce-sign-graph-symbol-for-your-web-site-design-logo-app-ui-vector-illustrati.jpg" />
             </head>
             <body>
                 <p>You  are already logged-in</p><br/>
@@ -20,7 +21,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Login Form</title>
+        <title>Login Form</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/95146958-chat-speech-icon-e-commerce-sign-graph-symbol-for-your-web-site-design-logo-app-ui-vector-illustrati.jpg" />
         <link rel="stylesheet" href="css/login_style.css"/>
     </head>
     <body>
@@ -29,7 +31,7 @@
                 <div class="div1">
                     <div class="updiv">
                         <a href="homepage.php">
-                            <img src="Image/95146958-chat-speech-icon-e-commerce-sign-graph-symbol-for-your-web-site-design-logo-app-ui-vector-illustrati.jpg" alt="Status" class="image"/>
+                            <img src="img/95146958-chat-speech-icon-e-commerce-sign-graph-symbol-for-your-web-site-design-logo-app-ui-vector-illustrati.jpg" alt="Status" class="image"/>
                         </a>
                     </div>
                 </div>
