@@ -28,8 +28,12 @@ div.header{
 .a2,.a3{
     height: 17%;
 }
+a{
+    text-decoration: none;
+}
 .ungineering{
     border-bottom: solid 1px #CFCACB;
+    color: black;
     margin: 20px 337px 0px 0px;
     font-weight: bold;
     font-size: 30px;
@@ -39,10 +43,12 @@ div.header{
     color: red;
 }
 .bit{
+    color: black;
     margin: 0px 0px 0px 15px;
     font-size: 13px;
 }
 .byte{
+    color: black;
     margin: 0px 0px 0px 45px;
     font-size: 13px;
 }
@@ -98,9 +104,10 @@ h1{
     font-family: sans-serif;
 }
 .name1,.email1,.password1,.college1,.phone1{
-    font-size: 20px;
+    font-size: 15px;
     height: 35px;
     width: 100%;
+    padding-left: 8px;
 }
 .name_text,.email_text,.password_text,.college_text,.phone_text{
     float: left;
@@ -108,9 +115,7 @@ h1{
 }
 .update{
     margin: 0% 50.5% 0% 35%;
-    border-color: red;
     font-weight: bold;
-    background-color: red;
     color: white;
 }
 .update_dashboard{

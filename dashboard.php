@@ -15,13 +15,13 @@ session_start();
                 </div>
                 <div class="a">
                     <div class="a1">
-                        <p class="ungineering"><span class="p1">un</span>gineering</p>
+                        <a href="homepage.php"><p class="ungineering"><span class="p1">un</span>gineering</p></a>
                     </div>
                     <div class="a2">
-                        <p class="bit">A <span class="p1">bit</span> of knowledge is good.</p>
+                        <a href="homepage.php"><p class="bit">A <span class="p1">bit</span> of knowledge is good.</p></a>
                     </div>
                     <div class="a3">
-                        <p class="byte">A <span class="p1">byte</span> is better.</p>
+                        <a href="homepage.php"><p class="byte">A <span class="p1">byte</span> is better.</p></a>
                     </div>
                 </div>
                 <div class="dashboard">
