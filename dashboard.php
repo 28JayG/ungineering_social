@@ -10,7 +10,7 @@ session_start();
         <div class="dashboard_wrapper">
             <div class="header">
                 <div class="logo">
-                    <img src="img/img.jpg" alt="Sample Image" class="img"/>
+                    <a href="homepage.php"><img src="img/img.jpg" alt="Sample Image" class="img"/></a>
                 </div>
                 <div class="a">
                     <div class="a1">
