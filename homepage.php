@@ -61,7 +61,7 @@ session_start()
 
                 <div class="put_status">
                     <form method="post" action="homepage_submit.php" id="status_form" >
-                        <textarea rows= "10" cols=94" name="status" id="text"></textarea>
+                        <textarea rows= "9" cols=94" name="status" id="text"></textarea>
                         <input type="submit" name="submit" value="SUBMIT" id="b21">
                     </form>
                 </div>
