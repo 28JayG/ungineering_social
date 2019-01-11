@@ -17,6 +17,7 @@
     }
 
     $status = $_POST['status'];
+    $status=mysqli_real_escape_string($conn,$status);
     $id = $_SESSION['id'];
 
     if ($status == NULL) {
