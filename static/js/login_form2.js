@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     $('#login_form').submit(function() {
-        var url = "login_submit.php";
+        var url = "/social_media/index.php/login/login_submit";
         var data = $('#login_form').serialize();
         $.ajax(url, {
             data: data,
@@ -18,7 +18,7 @@ var login_success = function (data) {
 
     if (data.success) {
         alert(data.message);
-        window.location.href = "homepage.php";
+        window.location.href = "/social_media/index.php/home/home";
     } else if(!data.success && data.mode==2){
         alert("Not registered");
     } else{

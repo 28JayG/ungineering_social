@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $('#registration_form').submit(function() {
-        var url = "register_submit2.php";
+        var url = "/social_media/index.php/login/register_submit";
         var data = $('#registration_form').serialize();
         $.ajax(url, {
             data: data,
@@ -17,7 +17,7 @@ var registration_success = function (data) {
 
     if (data.success) {
         alert(data.message);
-        window.location.href = "login_form.php";
+        window.location.href = "/social_media/index.php/home/home";
     } else {
         alert(data.message);
     }
