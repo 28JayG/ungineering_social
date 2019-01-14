@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     $('#login_form').submit(function() {
         var url = "/social_media/index.php/login/login_submit";
         var data = $('#login_form').serialize();
@@ -20,9 +19,9 @@ var login_success = function (data) {
         alert(data.message);
         window.location.href = "/social_media/index.php/home/home";
     } else if(!data.success && data.mode==2){
-        alert("Not registered");
+        alert(data.message);
     } else{
-        alert("Login failed\nCheck your email or password");
+        alert(data.message);
     }
 };
 

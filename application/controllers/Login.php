@@ -7,18 +7,18 @@ session_start();
 class Login extends CI_Controller {
 
     public function login_form() {
-        if (isset($_SESSION['id'])) {
-            $this->load->view('login_form_loggedin');
-        } else {
-            $this->load->view('login_form_not_loggedin');
-        }
+        session_destroy();
+        //if (isset($_SESSION['id'])) {
+        //    $this->load->view('login_form_loggedin');
+        //} else {
+            $this->load->view('login_form');
+        //}
     }
 
     public function login_submit() {
         $response = array();
         $conn = $this->load->model('user');
         if (!$conn) {
-
             $response['mode'] = 1;
             $response['success'] = false;
             $response['message'] = "Connection failed: " . mysqli_connect_error();
@@ -27,16 +27,13 @@ class Login extends CI_Controller {
         }
         $email = $_POST['email'];
         $password = $_POST['password'];
-
         $row = array();
         $result = $this->user->get_data_from_table($email);
 
-        print_r($result);
         if (!$result) {
-            //die("Error: " . $sql . "<br>" . mysqli_error($conn));
             $response['mode'] = 2;
             $response['success'] = false;
-            $response['message'] = "Error: " . $sql . "<br>" . mysqli_error($conn);
+            $response['message'] = "This email is not registered with us.";
             echo json_encode($response);
             exit();
         } else {
@@ -48,20 +45,20 @@ class Login extends CI_Controller {
             if ($password == $row['password']) {
                 $_SESSION['id'] = $row['id'];
                 $_SESSION['name'] = $row['name'];
-                $response['success'] = $result;
-                $response['message'] = "Hello " . $row['name'];
-
-                //header('location:dashboard.php');
+                $response['success'] = true;
+                $response['message'] = "Hello ".$row['name'];
+                echo json_encode($response);
             } else {
                 $response['success'] = false;
                 $response['mode'] = 3;
-                //$response['message'] = "Login failed";
+                $response['message'] = "Password mismatch";
+                echo json_encode($response);
             }
         }
-        echo json_encode($response);
     }
 
     public function register_form() {
+        session_destroy();
         $this->load->view('register_form');
     }
 
@@ -75,17 +72,14 @@ class Login extends CI_Controller {
         $email = $_POST['email'];
         $password = $_POST['password'];
         $confpass = $_POST['conf_pass'];
-        //$data = ['name','email','password'];
-
 
         if ($name != "" && $email != "" && $password != "" && $confpass != "") {
             if ($confpass == $password) {
                 $this->load->model('user');
                 $r = $this->user->registration($data);
                 if (!$r) {
-                    //die("Error:". $sql. "<br/>". mysqli_error($conn));
                     $response['success'] = $r;
-                    $response['message'] = "Error: " . $sql . "<br>" . mysqli_error($conn);
+                    $response['message'] = "Error: Connection Failed";
                     echo json_encode($response);
                     exit();
                 }

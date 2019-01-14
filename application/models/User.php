@@ -7,7 +7,8 @@ class User extends CI_Model {
     //connect with database
     public function __construct() {
         parent::__construct();
-        $this->load->database();
+        $r=$this->load->database();
+        return $r;
     }
 
     public function registration($data) {
