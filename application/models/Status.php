@@ -16,6 +16,9 @@
 
             return $query->result_array();
         }
+        public function insert_status($data){
+            $this->db->insert('statuses',$data);
+        }
         
     }
 ?>        

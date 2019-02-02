@@ -42,7 +42,7 @@ class Home extends CI_Controller {
         } else {
             $data = array(
                     'status'=> $status,
-                    'user_id'=> $user_id,
+                    'user_id'=> $id,
             );
             $this->load->model('status');
             
