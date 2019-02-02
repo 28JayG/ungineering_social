@@ -12,7 +12,7 @@ session_start()
         <div class="header">
             <div class="section1">
                 <div class="img">
-                    <a href="homepage.php"><img src="/static/images/img.jpg" alt="Sample Image" class="a111"/></a>
+                    <a href="/application/views/homepage.php"><img src="/static/images/img.jpg" alt="Sample Image" class="a111"/></a>
                 </div>
                 <div class="text">
                     <div class="text1">
@@ -33,7 +33,7 @@ session_start()
                     <?php
                 } else {
                     ?>
-                    <a href="login_form.php"><button type="button" class="button1">Login</button></a>
+                    <a href="/application/views/login_form.php"><button type="button" class="button1">Login</button></a>
                     <?php
                 }
                 ?>    

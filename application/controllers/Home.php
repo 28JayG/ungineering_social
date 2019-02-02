@@ -24,7 +24,7 @@ class Home extends CI_Controller {
 
         $response = array();
         $conn = mysqli_connect($hostname, $username, $db_password, $db_name);
-        if (!$conn) {
+        if (!$this->load->database()) {
             $response['success'] = false;
             $response['message'] = "Connection failed: " . mysqli_connect_error();
             echo json_encode($response);
@@ -40,11 +40,15 @@ class Home extends CI_Controller {
             $response['message'] = "please put some status";
             echo json_encode($response);
         } else {
-            $sql = "INSERT INTO statuses(status,user_id)
-                    VALUES('$status','$id')";
+            $data = array(
+                    'status'=> $status,
+                    'user_id'=> $user_id,
+            );
+            $this->load->model('status');
+            
+            $sql = $this->status->insert_status($data);
 
-            $result = mysqli_query($conn, $sql);
-            if (!$result) {
+            if (!$sql) {
                 $response['success'] = false;
                 $response['message'] = "Error: " . $sql . "<br>" . mysqli_error($conn);
                 echo json_encode($response);
@@ -56,7 +60,6 @@ class Home extends CI_Controller {
             $response['message'] = "status updated";
             echo json_encode($response);
         }
-        mysqli_close($conn);
     }
 
 }
